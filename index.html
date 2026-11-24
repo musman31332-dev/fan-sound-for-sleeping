@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fan Sound for Sleeping – Free Fan Noise for Winter Nights</title>
+<meta name="description" content="Free fan sound for sleeping, even on cold winter nights. A soft, steady fan noise that plays all night with no ads. Choose low, medium or high speed, set a timer, and fall asleep easily.">
+<meta name="keywords" content="fan sound, fan sound for sleeping, white noise, fan noise, sleep sounds, fan sound all night, fan sound for winter nights, sleep with fan sound in winter">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://musman31332-dev.github.io/fan-sound-for-sleeping/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fan Sound for Sleeping – Free, Plays All Night">
+<meta property="og:description" content="A soft fan sound to help you sleep. Low, medium and high speed, with a sleep timer. Free.">
+<meta property="og:url" content="https://musman31332-dev.github.io/fan-sound-for-sleeping/">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Fan Sound for Sleeping","url":"https://musman31332-dev.github.io/fan-sound-for-sleeping/","applicationCategory":"LifestyleApplication","operatingSystem":"Any","description":"Free fan sound for sleeping that plays all night.","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<style>
+:root{--bg:#10151c;--panel:#18202b;--text:#e8edf3;--muted:#8d9aab;--accent:#7fb4e6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#eef2f6;--panel:#fff;--text:#16202b;--muted:#5d6b7c;--accent:#2f6fa8}}
+html,body{min-height:100%;margin:0}
+body{background:var(--bg);color:var(--text);font-family:"Trebuchet MS",Verdana,sans-serif;display:flex;align-items:center;justify-content:center;padding:24px 0}
+main{width:min(92%,380px);background:var(--panel);border-radius:24px;padding:28px 24px;text-align:center}
+h1{font-size:1.3rem;margin:0 0 4px}
+p{color:var(--muted);margin:0 0 20px;font-size:.95rem}
+#fan{width:120px;height:120px;margin:0 auto 20px;display:block}
+#blades{transform-origin:60px 60px}
+.on #blades{animation:spin 0.5s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion: reduce){.on #blades{animation:none}}
+button.main{width:100%;padding:16px;font-size:1.1rem;border:0;border-radius:14px;background:var(--accent);color:#fff;font-weight:bold;cursor:pointer}
+button.main:focus-visible,input:focus-visible,.speed button:focus-visible{outline:3px solid var(--text);outline-offset:2px}
+.row{margin-top:20px;text-align:left}
+label{font-size:.9rem;color:var(--muted);display:block;margin-bottom:6px}
+input[type=range]{width:100%}
+.speed{display:flex;gap:8px}
+.speed button{flex:1;padding:10px;border-radius:10px;border:2px solid var(--muted);background:none;color:var(--text);font-size:.95rem;cursor:pointer}
+.speed button[aria-pressed="true"]{border-color:var(--accent);background:var(--accent);color:#fff}
+.about{margin-top:28px;text-align:left;border-top:1px solid var(--muted);padding-top:18px}.about h2{font-size:1rem;margin:0 0 8px}.about p{font-size:.88rem;line-height:1.5;margin:0 0 10px}
+#timerText{margin-top:8px;font-size:.85rem;color:var(--muted);min-height:1.2em}
+</style>
+</head>
+<body>
+<main id="app">
+<h1>Fan sound for sleeping</h1>
+<p>Plays nonstop until you stop it.</p>
+<svg id="fan" viewBox="0 0 120 120" aria-hidden="true">
+<circle cx="60" cy="60" r="56" fill="none" stroke="var(--muted)" stroke-width="3"/>
+<g id="blades" fill="var(--accent)">
+<path d="M60 60 C45 40 50 12 60 12 C70 12 75 40 60 60Z"/>
+<path d="M60 60 C45 40 50 12 60 12 C70 12 75 40 60 60Z" transform="rotate(120 60 60)"/>
+<path d="M60 60 C45 40 50 12 60 12 C70 12 75 40 60 60Z" transform="rotate(240 60 60)"/>
+</g>
+<circle cx="60" cy="60" r="7" fill="var(--panel)" stroke="var(--muted)" stroke-width="2"/>
+</svg>
+<button class="main" id="toggle">Start fan</button>
+
+<div class="row">
+<label>Fan speed</label>
+<div class="speed" id="speed">
+<button data-s="0" aria-pressed="false">Low</button>
+<button data-s="1" aria-pressed="true">Medium</button>
+<button data-s="2" aria-pressed="false">High</button>
+</div>
+</div>
+<div class="row">
+<label for="vol">Volume</label>
+<input type="range" id="vol" min="0" max="100" value="60">
+</div>
+<div class="row">
+<label for="timer">Turn off after</label>
+<select id="timer" style="width:100%;padding:10px;border-radius:10px">
+<option value="0">Never (all night)</option>
+<option value="30">30 minutes</option>
+<option value="60">1 hour</option>
+<option value="120">2 hours</option>
+<option value="480">8 hours</option>
+</select>
+<div id="timerText"></div>
+</div>
+<section class="about">
+<h2>Why a fan sound helps you sleep</h2>
+<p>Many people sleep better with a steady fan sound. The soft, even noise covers sudden sounds and helps your mind relax. If you are used to sleeping with a fan in summer, a fan sound lets you sleep the same way in cold weather, with no wind and no cold air.</p>
+<p>On cold winter nights you may not want a real fan, but silence can make it hard to sleep. This fan sound gives you the same sleeping sound with no cold wind.</p>
+<p>Press Start fan, choose low, medium or high speed, and set the volume. The sound plays all night until you stop it, or you can set a timer.</p>
+</section>
+</main>
+<script>
+(function(){
+var ctx=null,master,lp,hp,hum,humGain,lfo,lfoGain,src,running=false,speed=1,timerId=null;
+var P=[{f:500,h:90,g:.45},{f:900,h:110,g:.6},{f:1500,h:140,g:.8}];
+var app=document.getElementById('app'),btn=document.getElementById('toggle');
+
+function makeNoise(){
+  var len=ctx.sampleRate*6,buf=ctx.createBuffer(1,len,ctx.sampleRate),d=buf.getChannelData(0);
+  var last=0;
+  for(var i=0;i<len;i++){var w=Math.random()*2-1;last=(last+0.04*w)/1.04;d[i]=last*8;}
+  // crossfade ends so the loop has no click
+  var n=2000;
+  for(var j=0;j<n;j++){var t=j/n;d[len-n+j]=d[len-n+j]*(1-t)+d[j]*t;}
+  var s=ctx.createBufferSource();s.buffer=buf;s.loop=true;s.loopEnd=(len-n)/ctx.sampleRate;return s;
+}
+function build(){
+  ctx=new (window.AudioContext||window.webkitAudioContext)();
+  master=ctx.createGain();master.gain.value=0;master.connect(ctx.destination);
+  src=makeNoise();
+  lp=ctx.createBiquadFilter();lp.type='lowpass';lp.Q.value=0.7;
+  hp=ctx.createBiquadFilter();hp.type='highpass';
+  var air=ctx.createGain();air.gain.value=1;
+  src.connect(hp);hp.connect(lp);lp.connect(air);air.connect(master);
+  // soft motor hum
+  hum=ctx.createOscillator();hum.type='sine';hum.frequency.value=100;
+  humGain=ctx.createGain();humGain.gain.value=.03;
+  hum.connect(humGain);humGain.connect(master);
+  // slow blade wobble
+  lfo=ctx.createOscillator();lfo.frequency.value=0.35;
+  lfoGain=ctx.createGain();lfoGain.gain.value=.06;
+  lfo.connect(lfoGain);lfoGain.connect(air.gain);
+  src.start();hum.start();lfo.start();
+  apply();
+}
+function apply(){
+  if(!ctx)return;
+  var p=P[speed],t=ctx.currentTime;
+  lp.frequency.setTargetAtTime(p.f,t,.3);
+  hp.frequency.setTargetAtTime(p.h*.4,t,.3);
+  hum.frequency.setTargetAtTime(p.h,t,.3);
+  humGain.gain.setTargetAtTime(.02+speed*.01,t,.3);
+  var v=document.getElementById('vol').value/100;
+  master.gain.setTargetAtTime(running?v*p.g*.9:0,t,running?1.2:.6);
+}
+function start(){
+  if(!ctx)build();
+  ctx.resume();running=true;apply();
+  btn.textContent='Stop fan';app.classList.add('on');setTimer();
+  if('mediaSession' in navigator){navigator.mediaSession.metadata=new MediaMetadata({title:'Fan sound',artist:'Sleep'});
+    try{navigator.mediaSession.setActionHandler('pause',stop);navigator.mediaSession.setActionHandler('play',start);}catch(e){}}
+}
+function stop(){
+  running=false;apply();clearTimeout(timerId);document.getElementById('timerText').textContent='';
+  btn.textContent='Start fan';app.classList.remove('on');
+  setTimeout(function(){if(!running&&ctx)ctx.suspend();},1500);
+}
+function setTimer(){
+  clearTimeout(timerId);var m=+document.getElementById('timer').value,tt=document.getElementById('timerText');
+  if(!running||!m){tt.textContent='';return;}
+  tt.textContent='Fan will stop in '+m+' minutes';
+  timerId=setTimeout(stop,m*60000);
+}
+btn.onclick=function(){running?stop():start();};
+document.getElementById('vol').oninput=apply;
+document.getElementById('timer').onchange=setTimer;
+document.querySelectorAll('#speed button').forEach(function(b){
+  b.onclick=function(){
+    speed=+b.dataset.s;
+    document.querySelectorAll('#speed button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+    apply();
+  };
+});
+})();
+</script>
+</body>
+</html>
